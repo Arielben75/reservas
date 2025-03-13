@@ -37,31 +37,33 @@
             <h1>Reserva en Restaurante</h1>
             <img src="https://png.pngtree.com/png-clipart/20190313/ourlarge/pngtree-planar-cartoon-street-view-shop-restaurant-and-vendor-elements-png-image_848867.jpg" alt="Restaurantes", height="200px">
         </div>
-        <form>
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" required><br><br>
-            <label for="origen">Selecciona un Restaurante:</label><br>
-                <select id="clase" name="clase" required>
-                  <option value="">cuchara braba</option>
-                  <option value="economica">El rincon del aji</option>
-                  <option value="business">POTOSI AUTOCTONA</option>
+        <div>
+            <form>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="origen">Selecciona un Restaurante:</label><br>
+                    <select id="clase" name="clase" required>
+                      <option value="">cuchara braba</option>
+                      <option value="economica">El rincon del aji</option>
+                      <option value="business">POTOSI AUTOCTONA</option>
+                    </select><br><br>
+                <label for="fecha">Fecha de Reserva:</label><br>
+                <input type="date" id="fecha" name="fecha" required><br><br>
+                <label for="hora">Hora de Reserva:</label><br>
+                <input type="time" id="hora" name="hora" required><br><br>
+                <label for="personas">Número de Personas:</label><br>
+                <input type="number" id="personas" name="personas" min="1" required><br><br>
+                <label for="tipo_reserva">Tipo de Reserva:</label><br>
+                <select id="tipo_reserva" name="tipo_reserva" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="cena">Cena</option>
+                    <option value="almuerzo">Almuerzo</option>
                 </select><br><br>
-            <label for="fecha">Fecha de Reserva:</label><br>
-            <input type="date" id="fecha" name="fecha" required><br><br>
-            <label for="hora">Hora de Reserva:</label><br>
-            <input type="time" id="hora" name="hora" required><br><br>
-            <label for="personas">Número de Personas:</label><br>
-            <input type="number" id="personas" name="personas" min="1" required><br><br>
-            <label for="tipo_reserva">Tipo de Reserva:</label><br>
-            <select id="tipo_reserva" name="tipo_reserva" required>
-                <option value="">Seleccione una opción</option>
-                <option value="cena">Cena</option>
-                <option value="almuerzo">Almuerzo</option>
-            </select><br><br>
-            <label for="comentarios">Comentarios Adicionales:</label><br>
-            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
-            <input type="submit" value="Reservar">
-        </form>
+                <label for="comentarios">Comentarios Adicionales:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+                <input type="submit" value="Reservar">
+            </form>
+        </div>
     </div>
     <div>
         <h2>Reservas de Restaurantes Realizadas</h2>
