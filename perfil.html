@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil de Persona</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="reserva.html">Reservar en Restaurante</a></li>
+                <li><a href="vuelo.html">Reservar un Vuelo</a></li>
+                <li><a href="hotel.html">Reservar un Hotel</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <h1>Perfil de Persona</h1>
+        <form>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono"><br><br>
+            <label for="direccion">Dirección:</label><br>
+            <input type="text" id="direccion" name="direccion"><br><br>
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br><br>
+            <input type="submit" value="Guardar">
+            <input type="button" value="Editar">
+            <input type="button" value="Eliminar">
+        </form>
+    </div>
+    <div>
+        <h2>Perfiles Guardados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Dirección</th>
+                    <th>Fecha de Nacimiento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan</td>
+                    <td>Perez</td>
+                    <td>juan.perez@gmail.com</td>
+                    <td>748491971</td>
+                    <td>Calle 1234</td>
+                    <td>1990-05-15</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>Gomez</td>
+                    <td>maria.gomez@gmail.com</td>
+                    <td>77458771</td>
+                    <td>Avenida americana 154</td>
+                    <td>1985-10-20</td>
+                </tr>
+                <tr>
+                    <td>Carlos</td>
+                    <td>paredes</td>
+                    <td>carlos.paredes@gmail.com</td>
+                    <td>7784577</td>
+                    <td>avenida sucre 24754</td>
+                    <td>1995-03-25</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

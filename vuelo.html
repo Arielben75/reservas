@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de Vuelo</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div>
+      <nav>
+        <ul>
+            <li><a href="perfil.html">Perfil</a></li>
+            <li><a href="reserva.html">Reservar en Restaurante</a></li>
+            <li><a href="vuelo.html">Reservar un Vuelo</a></li>
+            <li><a href="hotel.html">Reservar un Hotel</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+        <h2>Reservar un Vuelo</h2>
+        <form>
+            <label for="nombre">Nombre Completo:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="origen">Origen:</label><br>
+            <select id="clase" name="clase" required>
+              <option value="">LA PAZ</option>
+              <option value="economica">ORURO</option>
+              <option value="business">POTOSI</option>
+              <option value="primera">SUCRE</option>
+              <option value="primera">COCHABAMBA</option>
+              <option value="primera">TARIJA</option>
+              <option value="primera">TRINIDAD</option>
+              <option value="primera">COBIJA</option>
+              <option value="primera">SANTA CRUZ</option>
+          </select><br><br>
+            <label for="destino">Destino:</label><br>
+            <select id="clase" name="clase" required>
+              <option value="">LA PAZ</option>
+              <option value="economica">ORURO</option>
+              <option value="business">POTOSI</option>
+              <option value="primera">SUCRE</option>
+              <option value="primera">COCHABAMBA</option>
+              <option value="primera">TARIJA</option>
+              <option value="primera">TRINIDAD</option>
+              <option value="primera">COBIJA</option>
+              <option value="primera">SANTA CRUZ</option>
+          </select><br><br>
+            <label for="fecha_vuelo">Fecha del Vuelo:</label><br>
+            <input type="date" id="fecha_vuelo" name="fecha_vuelo" required><br><br>
+            <label for="hora_vuelo">Hora del Vuelo:</label><br>
+            <input type="time" id="hora_vuelo" name="hora_vuelo" required><br><br>
+            <label for="clase">Clase:</label><br>
+            <select id="clase" name="clase" required>
+                <option value="">Seleccione una opción</option>
+                <option value="economica">Económica</option>
+                <option value="business">Business</option>
+                <option value="primera">Primera Clase</option>
+            </select><br><br>
+            <label for="asiento">Número de Asiento:</label><br>
+            <input type="text" id="asiento" name="asiento" required><br><br>
+            <input type="submit" value="Reservar">
+        </form>
+    </div>
+    <div>
+        <h2>Reservas de Vuelos Realizadas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Origen</th>
+                    <th>Destino</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Clase</th>
+                    <th>Asiento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ariel Torricos</td>
+                    <td>SUCRE</td>
+                    <td>ORURO</td>
+                    <td>2023-11-15</td>
+                    <td>10:00</td>
+                    <td>Económica</td>
+                    <td>15A</td>
+                </tr>
+                <tr>
+                    <td>Maria Gomez</td>
+                    <td>LA PAZ</td>
+                    <td>SANTA CRUZ</td>
+                    <td>2023-11-20</td>
+                    <td>14:30</td>
+                    <td>Business</td>
+                    <td>8B</td>
+                </tr>
+                <tr>
+                    <td>Carlos Manjon</td>
+                    <td>SUCRE</td>
+                    <td>TRINIDAD</td>
+                    <td>2023-11-25</td>
+                    <td>09:45</td>
+                    <td>Primera Clase</td>
+                    <td>1C</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva en Restaurantes</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="reserva.html">Reservar en Restaurante</a></li>
+                <li><a href="vuelo.html">Reservar un Vuelo</a></li>
+                <li><a href="hotel.html">Reservar un Hotel</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <h1>Reserva en Restaurante</h1>
+        <form>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+    
+            <label for="origen">Selecciona un Restaurante:</label><br>
+                <select id="clase" name="clase" required>
+                  <option value="">cuchara braba</option>
+                  <option value="economica">El rincon del aji</option>
+                  <option value="business">POTOSI AUTOCTONA</option>
+              </select><br><br>
+            <label for="fecha">Fecha de Reserva:</label><br>
+            <input type="date" id="fecha" name="fecha" required><br><br>
+            <label for="hora">Hora de Reserva:</label><br>
+            <input type="time" id="hora" name="hora" required><br><br>
+            <label for="personas">Número de Personas:</label><br>
+            <input type="number" id="personas" name="personas" min="1" required><br><br>
+            <label for="tipo_reserva">Tipo de Reserva:</label><br>
+            <select id="tipo_reserva" name="tipo_reserva" required>
+                <option value="">Seleccione una opción</option>
+                <option value="cena">Cena</option>
+                <option value="almuerzo">Almuerzo</option>
+            </select><br><br>
+            <label for="comentarios">Comentarios Adicionales:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+            
+            <input type="submit" value="Reservar">
+        </form>
+    </div>
+    <div>
+        <h2>Reservas de Restaurantes Realizadas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Restaurante</th>
+                    <th>Fecha Reserva</th>
+                    <th>cantidad Personas</th>
+                    <th>tipo reserva</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ariel Torricos</td>
+                    <td>El rincon del aji</td>
+                    <td>2025-03-10</td>
+                    <td>10</td>
+                    <td>cena</td>
+                </tr>
+                <tr>
+                    <td>Maria Gomez</td>
+                    <td>POTOSI AUTOCTONA</td>
+                    <td>2025-02-25</td>
+                    <td>4</td>
+                    <td>Almuerzo</td>
+                </tr>
+                <tr>
+                    <td>Carlos Manjon</td>
+                    <td>cuchara braba</td>
+                    <td>2025-03-02</td>
+                    <td>9</td>
+                    <td>cena</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

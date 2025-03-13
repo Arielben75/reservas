@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de Hotel</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="reserva.html">Reservar en Restaurante</a></li>
+                <li><a href="vuelo.html">Reservar un Vuelo</a></li>
+                <li><a href="hotel.html">Reservar un Hotel</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div>
+        <h2>Reservar un Hotel</h2>
+        <form>
+            <label for="nombre">Nombre Completo:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="hotel">seleccione la cantidad de estrellas:</label><br>
+            <select id="clase" name="clase" required>
+                <option value="">1 estrella</option>
+                <option value="economica">2 estrellas</option>
+                <option value="business">3 estrellas</option>
+            </select><br><br>
+            <label for="hotel">seleccione el HOTEL:</label><br>
+            <select id="clase" name="clase" required>
+                <option value="">parador santa maria</option>
+                <option value="economica">Hotel Charcas</option>
+                <option value="business">Hotel La Perla Dorada</option>
+              </select><br><br>
+            <label for="fecha_entrada">Fecha de Entrada:</label><br>
+            <input type="date" id="fecha_entrada" name="fecha_entrada" required><br><br>
+            <label for="fecha_salida">Fecha de Salida:</label><br>
+            <input type="date" id="fecha_salida" name="fecha_salida" required><br><br>
+            <label for="habitacion">Tipo de Habitación:</label><br>
+            <select id="habitacion" name="habitacion" required>
+                <option value="">Seleccione una opción</option>
+                <option value="individual">Individual</option>
+                <option value="doble">Doble</option>
+                <option value="suite">Suite</option>
+            </select><br><br>
+            <label for="personas">Número de Personas:</label><br>
+            <input type="number" id="personas" name="personas" min="1" required><br><br>
+
+            <label for="acepto">Estoy de acuerdo con los términos y condiciones:</label><br>
+            <label class="switch">
+                <input type="checkbox" id="acepto" name="acepto" required>
+                <span class="slider"></span>
+            </label><br><br>
+            <input type="submit" value="Reservar">
+        </form>
+    </div>
+    <div>
+        <h2>Reservas de Hoteles Realizadas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Hotel</th>
+                    <th>Fecha de Entrada</th>
+                    <th>Fecha de Salida</th>
+                    <th>Tipo de Habitación</th>
+                    <th>Número de Personas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Perez</td>
+                    <td>parador santa maria</td>
+                    <td>2025-01-15</td>
+                    <td>2025-01-20</td>
+                    <td>Doble</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Maria Gomez</td>
+                    <td>Hotel Charcas</td>
+                    <td>2025-01-25</td>
+                    <td>2025-01-30</td>
+                    <td>Suite</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
